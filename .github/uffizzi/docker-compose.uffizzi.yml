@@ -3,6 +3,9 @@ x-uffizzi:
   ingress:
     service: livebook
     port: 8080
+    additional_subdomains:
+      - "foo"
+      - "bar"
 services:
   livebook:
     image: "${APP_IMAGE}"
